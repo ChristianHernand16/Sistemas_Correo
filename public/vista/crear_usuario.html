@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<title>FORMULARIO</title>
+
+<head>
+    <title>FORMULARIO</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="validaciones.js"></script>
+    <link href="usu.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <form id="formulario01" method="POST" action="../controladores/crear_usuario.php" onsubmit=" return validarCamposObligatorios()">
+
+        <label for="cedula">Cedula (*)</label>
+        <input type="text" id="cedula" name="cedula" value="" onblur="validarcedu(this)" />
+        <span id="mensajeCedula"> </span>
+        <br>
+        <label for="nombres">Nombres (*)</label>
+        <input type="text" id="nombres" name="nombres" value="" onkeypress="return sololetras(event)" onpaste="return false" />
+        <span id="mensajeNombre"> </span>
+        <br>
+        <label for="apellidos">Apelidos (*)</label>
+        <input type="text" id="apellidos" name="apellidos" value="" onkeypress="return sololetras(event)" onpaste="return false" />
+        <span id="mensajeApellido"> </span>
+        <br>
+        <label for="direccion">Dirección (*)</label>
+        <input type="text" id="direccion" name="direccion" value="" />
+        <span id="mensajeDireccion"> </span>
+        <br>
+        <label for="telefono">Teléfono (*)</label>
+        <input type="text" id="telefono" name="telefono" value="" required onKeyPress="return SoloNumeros(event);" />
+        <span id="mensajeTelefono"> </span>
+        <br>
+        <label for="fecha">Fecha Nacimiento (*)</label>
+        <input type="text" id="fechaNacimiento" name="fechaNacimiento" value="" placeholder="DDMMYYYY" maxlength="8" onkeypress="return soloNumeros(event);" onKeyUp="ValidarFecha();" />
+        <span id="mensajeFecha"> </span>
+        <br>
+        <label for="correo">Correo electrónico (*)</label>
+        <input type="text" id="correo" name="correo" value="" onblur="return validarCorreo(this)" />
+        <span id="mensajeCorreo"> </span>
+        <br>
+        <label for="correo">Contraseña (*)</label>
+        <input type="password" id="contrasena" name="contrasena" value="" />
+        <span id="mensajeContrasena"> </span>
+        <br>
+        <label for="rol">Tipo de Usuario (*)</label>
+        <input list="browsers" name="rol" id="rol">
+        <datalist id="browsers">
+            <option value="ADMIN">
+            <option value="USER">
+        </datalist>
+
+        <input type="submit" id="crear" name="crear" value="Aceptar" />
+        <input type="reset" id="cancelar" name="cancelar" value="Cancelar" />
+
+    </form>
+</body>
+
+</html>

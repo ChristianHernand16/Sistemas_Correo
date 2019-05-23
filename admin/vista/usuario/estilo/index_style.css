@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: helvetica Neue;
+    font-weight: lighter;
+}
+
+html,
+body {
+    background-color: #3fa191;
+}
+
+section#formulario {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -300px;
+    width: 400px;
+    min-height: 100px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+p#titulo {
+    font-size: 1.6em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="mail"],
+textarea {
+    width: 350px;
+    height: 35px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 0px;
+    background-color: #71adaa;
+    border-radius: 5px;
+}
+
+textarea {
+    max-width: 350px;
+    min-width: 350px;
+    min-height: 70px;
+    padding-top: 10px;
+}
+
+input[type="submit"] {
+    margin: 20px;
+    margin-bottom: 20px;
+    width: 360px;
+    height: 40px;
+    outline: none;
+    border: 0px;
+    background-color: #6a7773;
+    color: rgb(20, 19, 19);
+    font-size: 1.2em;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 0px #8ebf65af;
+}
+
+#fechaNacimiento {
+    width: 350px;
+    height: 35px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 0px;
+    background-color: #71adaa;
+    border-radius: 5px;
+}
+
+#hora {
+    width: 350px;
+    height: 35px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 0px;
+    background-color: #71adaa;
+    border-radius: 5px;
+}

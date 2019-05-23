@@ -1,0 +1,35 @@
+.menuCSS3 ul {
+    display: flex;
+    padding: 0;
+    margin: 3%;
+    list-style: none;
+}
+
+.menuCSS3 a {
+    display: block;
+    padding: 2em;
+    background-color: rgb(59, 163, 204);
+    text-decoration: none;
+    color: #191C26;
+}
+
+.menuCSS3 a:hover {
+    background-color: rgb(59, 163, 204);
+}
+
+.menuCSS3 ul li ul {
+    display: none;
+}
+
+.menuCSS3 ul li a:hover+ul,
+.menuCSS3 ul li ul:hover {
+    display: block;
+}
+
+.foto1 {
+    padding: 50px;
+    margin: 50px;
+    border: 2px solid black;
+    width: 370px;
+    height: 250px;
+}
